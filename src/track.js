@@ -204,7 +204,7 @@ export class Track extends React.PureComponent {
     return (
       <div
         className="slick-track"
-        style={this.props.trackStyle}
+        style={{ touchAction: "pan-y", ...this.props.trackStyle }}
         {...mouseEvents}
       >
         {slides}
